@@ -24,7 +24,20 @@ int recursiveWay(int n){
 	}
 }
 
+int tailRecursiveHelper(int n, int n1, int n2){
+	if(n<2){
+		return n1;
+	}else{
+		return tailRecursiveHelper(n-1,n2,n2+n1);
+	}
+}
+
+int tailRecursive(int n){
+	return tailRecursiveHelper(n,0,1);
+}
+
 int main(void){
-	printf("Loop: %d, Recursion: %d\n",loopWay(5),recursiveWay(5));
+	printf("Loop: %d\nRecursion: %d\n",loopWay(5),recursiveWay(5));
+	printf("Tail Recursion: %d\n",tailRecursive(5));
 	return 0;
 }

@@ -18,5 +18,15 @@ def recursion(n):
 	else:
 		return recursion(n-1)+recursion(n-2)
 
+def tailRecursiveHelper(n,n1,n2):
+	if n<2:
+		return n1
+	else:
+		return tailRecursiveHelper(n-1,n2,n2+n1)
+
+def tailRecursive(n):
+	return tailRecursiveHelper(n,0,1)
+
 print("Loop: "+str(loopWay(5)))
 print("Recursion: "+str(recursion(5)))
+print("Tail Recursion; "+str(tailRecursive(5)))

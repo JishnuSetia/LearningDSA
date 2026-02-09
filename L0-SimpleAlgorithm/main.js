@@ -22,5 +22,18 @@ function recursion(n){
         }
 }
 
+function tailRecursiveHelper(n,n1,n2){
+	if(n<2){
+		return n1;
+	}else{
+		return tailRecursiveHelper(n-1,n2,n2+n1);
+	}
+}
+
+function tailRecursive(n){
+	return tailRecursiveHelper(n,0,1);
+}
+
 console.log("Loop: "+loopWay(5));
 console.log("Recursion: "+recursion(5));
+console.log("Recursion: "+tailRecursive(5));

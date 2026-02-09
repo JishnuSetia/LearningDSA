@@ -23,9 +23,23 @@ public class Fibo{
 		}
 	}
 	
+	public int tailRecursionHelper(int n, int n1, int n2){
+		if(n<2){
+			return n1;
+		} else{
+			return tailRecursionHelper(n-1,n2,n2+n1);
+		}
+	}
+
+	public int tailRecursion(int n){
+		return tailRecursionHelper(n,0,1);
+	}
+	
 	public static void main(String[] args){
 		Fibo f = new Fibo();
 		System.out.println("Loop: "+f.loopWay(5));
 		System.out.println("Recursion: "+f.recursion(5));
+		System.out.println("Tail Recursion: "+f.tailRecursion(5));
+
 	}
 }
