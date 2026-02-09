@@ -100,8 +100,8 @@ cd LearningDSA
 ```bash
 ./run.sh L0-SimpleAlgorithm/main.c
 ./run.sh L0-SimpleAlgorithm/Fibo.java
-./run.sh L0-SimpleAlgorithm/script.js
-./run.sh L0-SimpleAlgorithm/example.py
+./run.sh L0-SimpleAlgorithm/main.js
+./run.sh L0-SimpleAlgorithm/main.py
 ```
 
 4. The script supports **C, Python, Java, and JavaScript** and will automatically:
