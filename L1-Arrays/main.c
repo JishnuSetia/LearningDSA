@@ -1,6 +1,10 @@
 #include <stdio.h>
 
 int min(int *arr,int size){
+	if(size==0){
+		printf("NO ELEMENTS\n");
+		return 0;
+	}
 	int minIn = 0;
 	for(int i=1;i<size;i++){
 		if(arr[minIn]>arr[i]){
@@ -11,6 +15,10 @@ int min(int *arr,int size){
 }
 
 int max(int *arr,int size){
+	if(size==0){
+                printf("NO ELEMENTS\n");
+                return 0;
+        }
         int maxIn = 0;
         for(int i=1;i<size;i++){
                 if(arr[maxIn]<arr[i]){

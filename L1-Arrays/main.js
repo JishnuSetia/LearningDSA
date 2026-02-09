@@ -1,4 +1,8 @@
 function min(arr){
+	if(arr.length==0){
+		console.log("NO ELEMENTS");
+		return;
+	}
 	let minIn = 0;
 	for(let i=1;i<arr.length;i++){
 		if(arr[i]<arr[minIn]){
@@ -9,6 +13,10 @@ function min(arr){
 }
 
 function max(arr){
+	if(arr.length==0){
+                console.log("NO ELEMENTS");
+                return;
+        }
         let maxIn = 0;
         for(let i=1;i<arr.length;i++){
                 if(arr[i]>arr[maxIn]){
