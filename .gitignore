@@ -1,0 +1,16 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+
+*.o
+*.out
+*.exe
+
+.DS_Store
+
+*.log
+
+*.swp
+*.swo
+*.swn
