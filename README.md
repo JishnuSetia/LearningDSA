@@ -93,7 +93,22 @@ cd LearningDSA
 
 2. Explore algorithms by topic and language.
 
-3. Compile/run code in your preferred environment (C compiler, Python interpreter, Java JDK, Node.js, etc.).
+3. Run code easily using the `run.sh` script:
+
+- Examples:
+
+```bash
+./run.sh L0-SimpleAlgorithm/main.c
+./run.sh L0-SimpleAlgorithm/Fibo.java
+./run.sh L0-SimpleAlgorithm/script.js
+./run.sh L0-SimpleAlgorithm/example.py
+```
+
+4. The script supports **C, Python, Java, and JavaScript** and will automatically:
+
+- Compile and run C programs
+- Execute Python, Java, and JS scripts
+- Show execution output with clear headers and exit codes
 
 ## Goals
 
